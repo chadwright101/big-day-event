@@ -7,10 +7,59 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      black: "#2D2C33",
+      white: "#FFFFFF",
+      green: "#96AB8F",
+      darkGreen: "#77805B",
+      salmon: "#D38672",
+      grey: "#8E8E93",
+      linkBlue: "#0000FF",
+      transparent: "transparent",
+    },
+    dropShadow: {
+      default: "0 4px 4px rgba(0, 0, 0, 0.1)",
+    },
+    fontSize: {
+      paragraph: [
+        "1rem",
+        {
+          letterSpacing: "0.01rem",
+          fontWeight: "200",
+          lineHeight: "130%",
+        },
+      ],
+      subheading: [
+        "1rem",
+        {
+          letterSpacing: "0.01rem",
+          fontWeight: "600",
+          lineHeight: "120%",
+        },
+      ],
+      heading: [
+        "2.5rem",
+        {
+          letterSpacing: "0.05rem",
+          fontWeight: "800",
+          lineHeight: "120%",
+        },
+      ],
+    },
+    screens: {
+      phone: "425px",
+      tablet: "800px",
+      desktop: "1280px",
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      margin: {
+        15: "60px",
+      },
+      padding: {
+        15: "60px",
+      },
+      gap: {
+        15: "60px",
       },
     },
   },
