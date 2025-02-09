@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Serif_Display, Noto_Serif } from "next/font/google";
 import "@/_styles/globals.css";
+import { Header } from "@/_components/navigation/header/header";
+import { Footer } from "@/_components/navigation/footer/footer";
 
 const notoSerifDisplay = Noto_Serif_Display({
   subsets: ["latin"],
@@ -24,7 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSerifDisplay} ${notoSerif} antialiased`}>
+        <Header />
         {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );

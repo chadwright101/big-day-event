@@ -1,0 +1,18 @@
+{
+  "contactDetails": {
+    "cheryl": {
+      "phone": "+27 82 570 7693",
+      "email": "cheryl@bigdayevent.co.za"
+    },
+    "heidi": {
+      "phone": "+27 83 300 3100",
+      "email": "heidi@bigdayevent.co.za"
+    }
+  },
+  "heroSlider": [
+    "/images/IMG_9574-2.jpg",
+    "/images/IMG_9580.jpg",
+    "/images/IMG_9676.jpg",
+    "/images/IMG_9681.jpg"
+  ]
+}

@@ -22,6 +22,10 @@ export default {
     dropShadow: {
       default: "0 4px 4px rgba(0, 0, 0, 0.1)",
     },
+    fontFamily: {
+      notoSerifDisplay: "Noto Serif Display",
+      notoSerif: "Noto Serif",
+    },
     fontSize: {
       paragraph: [
         "1rem",

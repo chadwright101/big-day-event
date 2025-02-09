@@ -25,7 +25,7 @@ h6 {
 }
 
 p {
-  @apply text-paragraph;
+  @apply text-paragraph text-justify;
 }
 
 input,
@@ -143,10 +143,4 @@ spinner {
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {
   color: white;
-}
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
-  }
 }
