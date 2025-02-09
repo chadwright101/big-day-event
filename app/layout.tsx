@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Noto_Serif_Display } from "next/font/google";
+import { Noto_Serif_Display, Noto_Serif } from "next/font/google";
 import "@/_styles/globals.css";
 
-const notoSerif = Noto_Serif_Display({
+const notoSerifDisplay = Noto_Serif_Display({
   subsets: ["latin"],
+});
+
+const notoSerif = Noto_Serif({
+  subsets: ["latin"],
+  weight: ["200"],
 });
 
 export const metadata: Metadata = {
@@ -18,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSerif} antialiased`}>{children}</body>
+      <body className={`${notoSerifDisplay} ${notoSerif} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

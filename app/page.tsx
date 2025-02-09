@@ -1,8 +1,11 @@
+import ButtonLink from "@/_components/ui/buttons/button-link";
+
 export default function Home() {
   return (
-    <div>
+    <div className="p-5 grid gap-5">
       <h1>Heading</h1>
       <h3>Subheading</h3>
+      <ButtonLink color="white">Button</ButtonLink>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam
         quasi, dolorum obcaecati molestias sed. Facere hic voluptatum nam

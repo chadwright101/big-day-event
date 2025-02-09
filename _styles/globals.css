@@ -7,7 +7,7 @@ html {
 }
 
 * {
-  color: #202020;
+  color: #2D2C33;
   font-family: 'Noto Serif Display', Georgia, serif;
 }
 
@@ -95,8 +95,8 @@ spinner {
 /* swiper styles */
 
 :root {
-  --swiper-pagination-color: #ae8f5f;
-  --swiper-pagination-bullet-inactive-color: #ae8f5f;
+  --swiper-pagination-color: #96AB8F;
+  --swiper-pagination-bullet-inactive-color: #96AB8F;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-bullet-size: 8px;
   --swiper-pagination-bullet-horizontal-gap: 4px;
@@ -143,4 +143,10 @@ spinner {
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {
   color: white;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
