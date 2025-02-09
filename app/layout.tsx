@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${notoSerifDisplay} ${notoSerif} antialiased`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

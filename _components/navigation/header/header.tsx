@@ -21,7 +21,7 @@ export function Header() {
   return (
     <header
       className={classNames(
-        "sticky top-0 left-0 border-b-[3px] bg-white border-green z-50 ease-in-out duration-300",
+        "sticky top-0 left-0 border-b-2 bg-white border-green z-50 ease-in-out duration-300",
         {
           "-top-2 desktop:-top-[22px]": isScrolled,
         }
