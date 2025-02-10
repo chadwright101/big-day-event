@@ -7,7 +7,7 @@ export const buttonStyles = (
   pending?: boolean
 ) =>
   classNames(
-    "flex text-[1.1rem] text-center font-notoSerif py-1.5 px-6 justify-center duration-500 border-2 rounded-[8px] font-bold tracking-[-0.01rem]",
+    "flex text-[1.1rem] text-center font-notoSerif py-1.5 px-6 justify-center duration-500 border-2 rounded-[8px] font-bold tracking-[-0.01rem] drop-shadow-default",
     cssClasses,
     {
       "bg-salmon border-salmon text-white": color === "salmon",

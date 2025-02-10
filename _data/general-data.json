@@ -14,5 +14,22 @@
     "/images/IMG_9580.jpg",
     "/images/IMG_9676.jpg",
     "/images/IMG_9681.jpg"
+  ],
+  "services": [
+    {
+      "name": "Full Wedding Planning",
+      "paragraph": "From conceptualizing your theme to selecting the perfect venue and managing every detail, we provide end-to-end planning to ensure your day is as unique as your love story.",
+      "image": "/images/W-G12359.jpg"
+    },
+    {
+      "name": "On-the-Day Coordination",
+      "paragraph": "Enjoy every moment without worrying about the logistics. Our team will handle everything, ensuring your wedding day is smooth and unforgettable.",
+      "image": "/images/andrea-jay-wedding-oakhurst-robberg-photography-sharyn-hodges-359.jpg"
+    },
+    {
+      "name": "Destination Weddings",
+      "paragraph": "Thinking of a wedding abroad or along South Africa’s scenic Garden Route? With extensive experience, we handle all the logistics so you can enjoy a stress-free celebration in your dream destination.",
+      "image": "/images/3.jpg"
+    }
   ]
 }

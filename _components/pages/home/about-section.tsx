@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <main className="max-w-[1280px] mx-auto px-7 py-15 grid gap-10 tablet:px-10">
+    <section className="max-w-[1280px] mx-auto px-7 py-15 grid gap-10 tablet:px-10">
       <h1>About Us</h1>
       <div className="grid gap-10 desktop:gap-5">
         <div className="grid gap-10 desktop:grid-cols-3 desktop:mb-5">
@@ -85,7 +85,7 @@ const AboutSection = () => {
       <ButtonLink color="green" href="/contact" cssClasses="desktop:hidden">
         Get In Touch
       </ButtonLink>
-    </main>
+    </section>
   );
 };
 

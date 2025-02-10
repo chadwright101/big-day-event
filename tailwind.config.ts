@@ -20,7 +20,7 @@ export default {
       transparent: "transparent",
     },
     dropShadow: {
-      default: "0 4px 4px rgba(0, 0, 0, 0.1)",
+      default: "0 4px 4px rgba(0, 0, 0, 0.125)",
     },
     fontFamily: {
       notoSerifDisplay: "Noto Serif Display",
@@ -36,9 +36,9 @@ export default {
         },
       ],
       subheading: [
-        "1rem",
+        "1.1rem",
         {
-          letterSpacing: "0.01rem",
+          letterSpacing: "0.011rem",
           fontWeight: "700",
           lineHeight: "120%",
         },
@@ -66,11 +66,6 @@ export default {
       },
       gap: {
         "15": "60px",
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
       colors: {},
     },
