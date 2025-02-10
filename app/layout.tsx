@@ -10,7 +10,6 @@ const notoSerifDisplay = Noto_Serif_Display({
 
 const notoSerif = Noto_Serif({
   subsets: ["latin"],
-  weight: ["200"],
 });
 
 export const metadata: Metadata = {

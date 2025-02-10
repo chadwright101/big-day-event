@@ -17,6 +17,7 @@ const ButtonLink = ({
       onClick={onClick}
       className={buttonStyles(color, cssClasses, disabled)}
       aria-label={ariaLabel}
+      style={{ fontVariant: "small-caps" }}
     >
       {children}
     </Link>

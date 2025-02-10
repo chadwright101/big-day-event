@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function MobileFooter() {
   return (
-    <div className="flex flex-col gap-10 items-center px-7 py-10 tablet:hidden">
+    <div className="flex flex-col gap-10 items-center px-7 py-10 desktop:hidden">
       <div className="flex gap-6 mb-5">
         <Link
           href="#"

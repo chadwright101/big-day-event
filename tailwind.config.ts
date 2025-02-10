@@ -39,7 +39,7 @@ export default {
         "1rem",
         {
           letterSpacing: "0.01rem",
-          fontWeight: "600",
+          fontWeight: "700",
           lineHeight: "120%",
         },
       ],

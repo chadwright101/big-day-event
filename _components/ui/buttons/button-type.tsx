@@ -17,12 +17,8 @@ const ButtonType = ({
     <button
       type={type}
       onClick={onClick}
-      className={classNames(
-        buttonStyles(color, cssClasses, disabled, pending),
-        {
-          "opacity-50 desktop:cursor-not-allowed desktop:hover:none": pending,
-        }
-      )}
+      className={buttonStyles(color, cssClasses, disabled, pending)}
+      style={{ fontVariant: "small-caps" }}
       disabled={disabled || pending}
     >
       {pending ? (

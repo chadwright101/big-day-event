@@ -5,7 +5,7 @@ import navData from "@/_data/nav-data.json";
 
 export function DesktopFooter() {
   return (
-    <div className="hidden tablet:block bg-white pt-10 pb-5">
+    <div className="hidden desktop:block bg-white pt-10 pb-5">
       <div className="max-w-[1280px] mx-auto px-10 desktop:px-15">
         <div className="flex justify-between">
           <nav>
@@ -73,13 +73,13 @@ export function DesktopFooter() {
             </ul>
           </nav>
 
-          <div className="flex flex-col items-end justify-between">
+          <div className="flex flex-col items-end justify-around">
             <Image
               src="/big-day-event-logo.png"
               alt="Big Day Event Logo"
               width={200}
               height={100}
-              className="w-[168px] h-auto"
+              className="w-[150px] h-auto"
             />
             <div className="text-right">
               <p className="text-[14px] tracking-[-0.0075rem] ">
@@ -96,7 +96,7 @@ export function DesktopFooter() {
             </div>
           </div>
         </div>
-        <hr className="text-green w-1/3 mx-auto mt-4" />
+        <hr className="text-green w-1/4 mx-auto mt-4" />
         <div className="text-center col-span-2 place-self-center mt-5">
           <h4
             className="font-light text-[14px] tracking-[-0.0075rem]"
