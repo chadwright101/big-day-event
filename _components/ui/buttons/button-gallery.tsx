@@ -18,7 +18,7 @@ const ButtonGallery = ({
       type="button"
       onClick={onClick}
       className={classNames(
-        "py-1.5 px-5 flex text-[1.1rem] text-center font-notoSerif justify-center duration-500 rounded-[8px] font-bold tracking-[-0.01rem] drop-shadow-default ease-in-out duration-300",
+        "py-1.5 px-5 flex text-[1.1rem] text-center font-notoSerif justify-center rounded-[8px] font-bold tracking-[-0.01rem] drop-shadow-default ease-in-out duration-300",
         {
           "bg-salmon text-white": !active,
           "bg-green opacity-50 desktop:hover:opacity-75": active,

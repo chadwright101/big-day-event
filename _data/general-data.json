@@ -46,5 +46,27 @@
       "/images/gallery/gallery-slider-6.jpg",
       "/images/gallery/gallery-slider-7.jpg"
     ]
-  }
+  },
+  "testimonials": [
+    {
+      "client": "Sarah & Mark, Plettenberg Bay",
+      "testimonial": "Heidi & Cheryl took all the stress out of planning our big day. Their attention to detail and local knowledge were invaluable!"
+    },
+    {
+      "client": "James & Olivia, George",
+      "testimonial": "We wanted a classic, elegant wedding, and Big Day Event delivered exactly that. The flowers, the venue, everything was breathtaking."
+    },
+    {
+      "client": "David & Chloe, Wilderness",
+      "testimonial": "From start to finish, Cheryl and Heidi were professional, creative, and incredibly organized. We couldn't have asked for better planners."
+    },
+    {
+      "client": "Liam & Sophia, Sedgefield",
+      "testimonial": "Big Day Event understood our vision perfectly.  They made our beach wedding feel both luxurious and relaxed. Highly recommended!"
+    },
+    {
+      "client": "Mia & Noah, Mossel Bay",
+      "testimonial": "The team at Big Day Event were amazing!  They found us the perfect venue and coordinated everything seamlessly. Our guests are still talking about it."
+    }
+  ]
 }

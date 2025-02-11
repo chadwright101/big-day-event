@@ -20,7 +20,7 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
   if (desktop) {
     return (
       <Swiper
-        autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 5000, disableOnInteraction: true }}
         speed={1000}
         effect="fade"
         modules={[Autoplay, EffectFade, Navigation, Pagination]}
@@ -95,6 +95,7 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
       <Swiper
         autoplay={{
           delay: 5000,
+          disableOnInteraction: true,
         }}
         spaceBetween={12}
         speed={1500}
