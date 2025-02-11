@@ -8,7 +8,7 @@ const { services } = serviceData;
 const ServicesSection = () => {
   return (
     <main className="max-w-[1280px] grid gap-10 mx-auto px-7 py-15 tablet:px-10">
-      <h1>Services</h1>
+      <h2>Services</h2>
       <ul className="grid gap-10 tablet:grid-cols-2 desktop:grid-cols-4">
         {services.map(({ name, image, paragraph }, index) => (
           <li

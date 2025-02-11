@@ -31,5 +31,20 @@
       "paragraph": "Thinking of a wedding abroad or along South Africa’s scenic Garden Route? With extensive experience, we handle all the logistics so you can enjoy a stress-free celebration in your dream destination.",
       "image": "/images/3.jpg"
     }
-  ]
+  ],
+  "gallery": {
+    "decor": [
+      "/images/gallery/gallery-slider-1.jpg",
+      "/images/gallery/gallery-slider-2.jpg",
+      "/images/gallery/gallery-slider-3.jpg"
+    ],
+    "destination": [
+      "/images/gallery/gallery-slider-4.jpg",
+      "/images/gallery/gallery-slider-5.jpg"
+    ],
+    "gardenRoute": [
+      "/images/gallery/gallery-slider-6.jpg",
+      "/images/gallery/gallery-slider-7.jpg"
+    ]
+  }
 }

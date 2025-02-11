@@ -15,7 +15,7 @@ export function DesktopFooter() {
                   <li key={item.title}>
                     <Link
                       href={item.url}
-                      className=" text-[14px] font-light tracking-[-0.0075rem] hover:text-opacity-80 ease-in-out duration-200"
+                      className=" text-[14px] font-light tracking-[-0.0075rem] hover:text-opacity-80 ease-in-out duration-200 desktop:hover:text-green"
                     >
                       {item.title}
                     </Link>

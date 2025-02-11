@@ -10,7 +10,7 @@ import { fetchEmailAddresses } from "@/_actions/contact-actions";
 export interface showContactProps {
   buttonClasses?: string;
   linkClasses?: string;
-  spinnerColor?: "purple" | "white";
+  spinnerColor?: "salmon" | "white";
   smallText?: boolean;
   department: "creative" | "general" | "publicRelations";
   whiteText?: boolean;
@@ -19,7 +19,7 @@ export interface showContactProps {
 const ShowEmailAddress = ({
   buttonClasses,
   linkClasses,
-  spinnerColor = "purple",
+  spinnerColor = "salmon",
   smallText,
   department = "general",
   whiteText,
@@ -53,7 +53,7 @@ const ShowEmailAddress = ({
         {showSpinnerEmail ? (
           <div
             className={classNames({
-              "spinner-purple": spinnerColor === "purple",
+              "spinner-salmon": spinnerColor === "salmon",
               "spinner-white": spinnerColor === "white",
             })}
           ></div>

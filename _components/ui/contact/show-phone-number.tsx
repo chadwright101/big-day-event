@@ -12,7 +12,7 @@ import { showContactProps } from "./show-email-address";
 const ShowPhoneNumber = ({
   buttonClasses,
   linkClasses,
-  spinnerColor = "purple",
+  spinnerColor = "salmon",
   smallText,
   department,
   whiteText,
@@ -46,7 +46,7 @@ const ShowPhoneNumber = ({
         {showSpinnerEmail ? (
           <div
             className={classNames({
-              "spinner-purple": spinnerColor === "purple",
+              "spinner-salmon": spinnerColor === "salmon",
               "spinner-white": spinnerColor === "white",
             })}
           ></div>

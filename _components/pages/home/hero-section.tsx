@@ -13,7 +13,7 @@ const HeroSection = () => {
           <span className="font-notoSerif font-extralight">Stress-Free</span>
         </h2>
         <ButtonLink
-          cssClasses="desktop:mt-2 desktop:place-self-start"
+          cssClasses="mt-1 desktop:mt-2 desktop:place-self-start"
           href="/contact"
         >
           Start Planning Today
