@@ -19,7 +19,7 @@ const TestimonialsSection = ({ cssClasses }: TestimonialsProps) => {
       )}
     >
       <div className="space-y-10">
-        <h2 className="text-[28px] min-[340px]:text-[32px] min-[390px]:text-heading">
+        <h2 className="text-[28px] min-[340px]:text-[32px] min-[390px]:text-heading desktop:text-[28px] desktop:font-notoSerif">
           Testimonials
         </h2>
         <div className="overflow-hidden border-y-[1.5px] border-green py-5">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import navData from "@/_data/nav-data.json";
+import SocialIcons from "@/_lib/utils/social-icons";
 
 export function DesktopFooter() {
   return (
@@ -22,54 +23,7 @@ export function DesktopFooter() {
                   </li>
                 );
               })}
-              <ul className="flex gap-2 mt-2">
-                <li>
-                  <Link
-                    href="#"
-                    aria-label="Facebook"
-                    target="_blank"
-                    className="hover:opacity-80 ease-in-out duration-200"
-                  >
-                    <Image
-                      src="/icons/facebook.png"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://www.instagram.com/big_day_event_sa/"
-                    aria-label="Instagram"
-                    target="_blank"
-                    className="hover:opacity-80 ease-in-out duration-200"
-                  >
-                    <Image
-                      src="/icons/instagram.png"
-                      aria-label="Instagram"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    aria-label="WhatsApp"
-                    target="_blank"
-                    className="hover:opacity-80 ease-in-out duration-200"
-                  >
-                    <Image
-                      src="/icons/whatsapp.png"
-                      alt="WhatsApp"
-                      width={20}
-                      height={20}
-                    />
-                  </Link>
-                </li>
-              </ul>
+              <SocialIcons small cssClasses="mt-2" />
             </ul>
           </nav>
 
@@ -96,7 +50,7 @@ export function DesktopFooter() {
             </div>
           </div>
         </div>
-        <hr className="text-green w-1/4 mx-auto mt-4" />
+        <hr className="text-green w-[28%] mx-auto mt-4" />
         <div className="text-center col-span-2 place-self-center mt-5">
           <h4
             className="font-light text-[14px] tracking-[-0.0075rem]"

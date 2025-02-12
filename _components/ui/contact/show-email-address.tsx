@@ -5,32 +5,27 @@ import { useState } from "react";
 
 import classNames from "classnames";
 
-import { fetchEmailAddresses } from "@/_actions/contact-actions";
+import { fetchEmailAddress } from "@/_actions/contact-actions";
 
 export interface showContactProps {
   buttonClasses?: string;
   linkClasses?: string;
   spinnerColor?: "salmon" | "white";
-  smallText?: boolean;
-  department: "creative" | "general" | "publicRelations";
-  whiteText?: boolean;
+  person: string;
 }
 
 const ShowEmailAddress = ({
   buttonClasses,
   linkClasses,
   spinnerColor = "salmon",
-  smallText,
-  department = "general",
-  whiteText,
+  person,
 }: showContactProps) => {
   const [showEmail, setShowEmail] = useState("Show email address");
   const [showSpinnerEmail, setShowSpinnerEmail] = useState(false);
 
-  const handleShowEmailAddresses = async () => {
+  const handleShowEmailAddress = async (person: string) => {
     setShowSpinnerEmail(true);
-    const emailAddress =
-      (await fetchEmailAddresses({ department })) || "Email not found";
+    const emailAddress = (await fetchEmailAddress(person)) || "Email not found";
     setShowEmail(emailAddress);
     setShowSpinnerEmail(false);
   };
@@ -38,28 +33,14 @@ const ShowEmailAddress = ({
   if (showEmail === "Show email address") {
     return (
       <button
-        onClick={handleShowEmailAddresses}
+        onClick={() => handleShowEmailAddress(person)}
         className={classNames(
-          "px-2 -mx-2 py-3 -my-3 hover:tablet:opacity-80 hover:cursor-pointer tablet:p-0 tablet:m-0 italic",
-          {
-            "text-[14px] tracking-[-0.0075rem]": smallText,
-            "text-paragraph": !smallText,
-            "text-white": whiteText,
-          },
+          "px-2 -mx-2 py-3 -my-3 text-paragraph text-left hover:desktop:opacity-80 hover:cursor-pointer desktop:p-0 desktop:m-0 italic",
           buttonClasses
         )}
         aria-label="Show email address"
       >
-        {showSpinnerEmail ? (
-          <div
-            className={classNames({
-              "spinner-salmon": spinnerColor === "salmon",
-              "spinner-white": spinnerColor === "white",
-            })}
-          ></div>
-        ) : (
-          showEmail
-        )}
+        {showSpinnerEmail ? <div className="spinner"></div> : showEmail}
       </button>
     );
   } else {
@@ -67,12 +48,7 @@ const ShowEmailAddress = ({
       <Link
         href={`mailto:${showEmail}`}
         className={classNames(
-          "py-3 px-2 -my-3 -mx-2 tablet:hover:opacity-80 tablet:p-0 tablet:m-0",
-          {
-            "text-[14px] tracking-[-0.0075rem]": smallText,
-            "text-paragraph": !smallText,
-            "text-white": whiteText,
-          },
+          "py-3 px-2 -my-3 text-paragraph text-linkBlue -mx-2 desktop:hover:opacity-80 desktop:p-0 desktop:m-0",
           linkClasses
         )}
       >

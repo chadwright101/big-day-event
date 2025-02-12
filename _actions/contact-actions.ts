@@ -3,35 +3,21 @@
 import contactData from "@/_data/general-data.json";
 
 const {
-  contactDetails: { emailAddresses, phoneNumbers },
+  contactDetails: { cheryl, heidi },
 } = contactData;
 
-interface ContactDepartmentProps {
-  department: "creative" | "general" | "publicRelations";
-}
-
-export const fetchEmailAddresses = async ({
-  department,
-}: ContactDepartmentProps) => {
-  if (department === "creative") {
-    return emailAddresses.creative;
-  } else if (department === "general") {
-    return emailAddresses.general;
-  } else {
-    null;
-  }
+export const fetchEmailAddress = async (person: string) => {
+  if (person === "cheryl") {
+    return cheryl.email;
+  } else if (person === "heidi") {
+    return heidi.email;
+  } else null;
 };
 
-export const fetchPhoneNumbers = async ({
-  department,
-}: ContactDepartmentProps) => {
-  if (department === "creative") {
-    return phoneNumbers.creative;
-  } else if (department === "general") {
-    return phoneNumbers.general;
-  } else if (department === "publicRelations") {
-    return phoneNumbers.publicRelations;
-  } else {
-    null;
-  }
+export const fetchPhoneNumber = async (person: string) => {
+  if (person === "cheryl") {
+    return cheryl.phone;
+  } else if (person === "heidi") {
+    return heidi.phone;
+  } else null;
 };

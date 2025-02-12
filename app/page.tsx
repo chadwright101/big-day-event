@@ -2,7 +2,7 @@ import AboutSection from "@/_components/pages/home/about-section";
 import GallerySection from "@/_components/pages/home/gallery/gallery-section";
 import HeroSection from "@/_components/pages/home/hero-section";
 import ServicesSection from "@/_components/pages/home/services-section";
-import TestimonialsSection from "@/_components/pages/testimonials/testimonials-section";
+import TestimonialsSection from "@/_components/pages/home/testimonials/testimonials-section";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       ></div>
       <GallerySection />
       <div
-        className="-translate-y-16 desktop:-translate-y-12"
+        className="-translate-y-32 desktop:-translate-y-[760px]"
         id="testimonials"
       ></div>
       <TestimonialsSection cssClasses="desktop:hidden" />

@@ -20,9 +20,9 @@ const ButtonType = ({
       style={{ fontVariant: "small-caps" }}
       disabled={disabled || pending}
     >
-      {pending ? (
+      {pending && type === "submit" ? (
         <div className="py-[3px]">
-          <div className="spinner-white"></div>
+          <div className="spinner"></div>
         </div>
       ) : (
         <>{children}</>

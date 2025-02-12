@@ -1,39 +1,11 @@
+import SocialIcons from "@/_lib/utils/social-icons";
 import Image from "next/image";
 import Link from "next/link";
 
 export function MobileFooter() {
   return (
     <div className="flex flex-col gap-10 items-center px-7 py-10 desktop:hidden">
-      <div className="flex gap-6 mb-5">
-        <Link
-          href="#"
-          aria-label="Facebook"
-          target="_blank"
-          className="p-3 -m-3"
-        >
-          <Image src="/icons/facebook.png" alt="" width={28} height={28} />
-        </Link>
-        <Link
-          href="https://www.instagram.com/big_day_event_sa/"
-          aria-label="Instagram"
-          className="p-3 -m-3"
-        >
-          <Image
-            src="/icons/instagram.png"
-            alt="Instagram"
-            width={28}
-            height={28}
-          />
-        </Link>
-        <Link href="#" aria-label="WhatsApp" className="p-3 -m-3">
-          <Image
-            src="/icons/whatsapp.png"
-            alt="WhatsApp"
-            width={28}
-            height={28}
-          />
-        </Link>
-      </div>
+      <SocialIcons />
       <Image
         src="/big-day-event-logo.png"
         alt="Big Day Event Logo"

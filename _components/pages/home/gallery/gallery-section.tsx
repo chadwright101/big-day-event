@@ -6,7 +6,7 @@ import GallerySlider from "./gallery-slider";
 import ButtonGallery from "@/_components/ui/buttons/button-gallery";
 
 import galleryData from "@/_data/general-data.json";
-import TestimonialsSection from "../../testimonials/testimonials-section";
+import TestimonialsSection from "../testimonials/testimonials-section";
 
 const {
   gallery: { decor, destination, gardenRoute },
