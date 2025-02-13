@@ -3,6 +3,11 @@ import GallerySection from "@/_components/pages/home/gallery/gallery-section";
 import HeroSection from "@/_components/pages/home/hero-section";
 import ServicesSection from "@/_components/pages/home/services-section";
 import TestimonialsSection from "@/_components/pages/home/testimonials/testimonials-section";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Big Day Event",
+};
 
 export default function Home() {
   return (

@@ -8,7 +8,7 @@ import classNames from "classnames";
 
 import Recaptcha from "@/_lib/recaptcha";
 import ButtonType from "@/_components/ui/buttons/button-type";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Calendar1 } from "lucide-react";
 
 interface Props {
   cssClasses?: string;
@@ -118,13 +118,25 @@ export default function ContactForm({
               <label htmlFor="weddingDate" className={labelStyles}>
                 Wedding Date:
               </label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                min={new Date().toISOString().split("T")[0]}
-                className={classNames("", inputStyles)}
-              />
+              <div className="relative">
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  min={new Date().toISOString().split("T")[0]}
+                  className={classNames(
+                    "",
+                    inputStyles,
+                    "w-full",
+                    "[appearance:none]",
+                    "[-webkit-appearance:none]"
+                  )}
+                />
+                <Calendar1
+                  color="#8E8E93"
+                  className="absolute bg-white right-3 w-7 p-0.5 top-[8px] pointer-events-none"
+                />
+              </div>
             </div>
             <div className="grid gap-[10px]">
               <label className={labelStyles}>Service Type</label>
@@ -147,7 +159,7 @@ export default function ContactForm({
                   <option value="Other">Other</option>
                 </select>
                 <ChevronDown
-                  color="#181818"
+                  color="#8E8E93"
                   className="absolute right-3 top-[9px] pointer-events-none"
                 />
               </div>
@@ -175,9 +187,11 @@ export default function ContactForm({
                 >
                   Submit
                 </ButtonType>
-                {!validateRecaptcha && (
-                  <Recaptcha onChange={handleRecaptchaChange} />
-                )}
+                <div className="overflow-x-auto w-full">
+                  {!validateRecaptcha && (
+                    <Recaptcha onChange={handleRecaptchaChange} />
+                  )}
+                </div>
               </>
             ) : (
               <ButtonType
