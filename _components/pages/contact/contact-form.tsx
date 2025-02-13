@@ -131,6 +131,9 @@ export default function ContactForm({
                     "[appearance:none]",
                     "[-webkit-appearance:none]"
                   )}
+                  onClick={(e) => {
+                    (e.target as HTMLInputElement).showPicker();
+                  }}
                 />
                 <Calendar1
                   color="#8E8E93"
