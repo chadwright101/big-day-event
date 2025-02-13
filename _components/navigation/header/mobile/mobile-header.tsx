@@ -39,7 +39,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
     >
       <Link href="/">
         <Image
-          src="/big-day-event-logo.png"
+          src="/images/big-day-event-logo.png"
           alt="Big Day Event Logo"
           width={200}
           height={100}

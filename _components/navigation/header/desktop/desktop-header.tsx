@@ -15,7 +15,7 @@ export function DesktopHeader({ isScrolled }: HeaderProps) {
         })}
       >
         <Image
-          src="/big-day-event-logo.png"
+          src="/images/big-day-event-logo.png"
           alt="Big Day Event Logo"
           width={230}
           height={150}

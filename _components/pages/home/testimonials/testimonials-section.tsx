@@ -29,7 +29,7 @@ const TestimonialsSection = ({ cssClasses }: TestimonialsProps) => {
           />
         </div>
       </div>
-      <ButtonLink>Contact Us</ButtonLink>
+      <ButtonLink href="/contact">Contact Us</ButtonLink>
     </article>
   );
 };

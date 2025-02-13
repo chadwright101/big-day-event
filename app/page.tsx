@@ -27,7 +27,7 @@ export default function Home() {
       ></div>
       <GallerySection />
       <div
-        className="-translate-y-32 desktop:-translate-y-[760px]"
+        className="-translate-y-32 desktop:-translate-y-[780px]"
         id="testimonials"
       ></div>
       <TestimonialsSection cssClasses="desktop:hidden" />

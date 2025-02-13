@@ -30,7 +30,7 @@ const ShowPhoneNumber = ({
       <button
         onClick={() => handleShowPhoneNumbers(person)}
         className={classNames(
-          "px-2 -mx-2 text-paragraph py-3 -my-3 hover:tablet:opacity-80 hover:cursor-pointer tablet:p-0 tablet:m-0 italic",
+          "px-2 text-left -mx-2 text-paragraph py-3 -my-3 hover:tablet:opacity-80 hover:cursor-pointer tablet:p-0 tablet:m-0 italic",
           buttonClasses
         )}
         aria-label="Show phone number"
@@ -43,7 +43,7 @@ const ShowPhoneNumber = ({
       <Link
         href={`tel:${showPhone}`}
         className={classNames(
-          "py-3 px-2 -my-3 -mx-2 text-paragraph text-linkBlue tablet:hover:opacity-80 tablet:p-0 tablet:m-0",
+          "py-3 text-left px-2 -my-3 -mx-2 text-paragraph text-linkBlue tablet:hover:opacity-80 tablet:p-0 tablet:m-0",
           linkClasses
         )}
       >

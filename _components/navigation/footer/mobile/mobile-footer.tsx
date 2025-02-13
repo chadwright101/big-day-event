@@ -7,7 +7,7 @@ export function MobileFooter() {
     <div className="flex flex-col gap-10 items-center px-7 py-10 desktop:hidden">
       <SocialIcons />
       <Image
-        src="/big-day-event-logo.png"
+        src="/images/big-day-event-logo.png"
         alt="Big Day Event Logo"
         width={200}
         height={100}

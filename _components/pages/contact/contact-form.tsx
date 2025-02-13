@@ -58,7 +58,7 @@ export default function ContactForm({
 
   const labelStyles = "text-subheading font-medium text-white";
   const inputStyles =
-    "h-10 px-3 rounded-[6px] border border-grey text-paragraph w-full";
+    "h-10 px-3 bg-white rounded-[6px] border border-grey text-paragraph w-full";
 
   return (
     <div

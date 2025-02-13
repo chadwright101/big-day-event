@@ -35,7 +35,9 @@ const ServicesSection = () => {
           <div className="grid gap-5">
             <h4>Unsure which package is right for you?</h4>
             <p>Let’s discuss your vision and create a personalised plan.</p>
-            <ButtonLink color="green">Contact Us For Details</ButtonLink>
+            <ButtonLink color="green" href="/contact">
+              Contact Us For Details
+            </ButtonLink>
           </div>
           <Image
             src="/images/favorites-24.jpg"
