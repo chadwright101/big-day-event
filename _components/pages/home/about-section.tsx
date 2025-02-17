@@ -7,14 +7,16 @@ const AboutSection = () => {
       <h2>About Us</h2>
       <div className="grid gap-10 desktop:gap-5">
         <div className="grid gap-10 tablet:grid-cols-[1fr_300px] desktop:mb-5">
-          <Image
-            src="/images/placeholder.png"
-            alt="Big Day Event team"
-            width={800}
-            height={800}
-            sizes="(max-width:800px) 100vw, 33vw"
-            className="object-cover tablet:order-last"
-          />
+          <div className="h-full tablet:order-last">
+            <Image
+              src="/images/0008-JE.jpg"
+              alt="Big Day Event team"
+              width={800}
+              height={800}
+              sizes="(max-width:800px) 100vw, 33vw"
+              className="object-cover h-full"
+            />
+          </div>
           <div className="space-y-10">
             <div className="space-y-5">
               <p className="desktop:col-span-2">

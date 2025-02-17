@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Big Day Event",
     images: [
       {
-        url: "/images/open-graph-image.webp",
+        url: "/images/hero-image.webp",
       },
     ],
   },
