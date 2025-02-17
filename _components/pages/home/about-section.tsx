@@ -6,29 +6,47 @@ const AboutSection = () => {
     <section className="max-w-[1280px] mx-auto px-7 py-15 grid gap-10 tablet:px-10">
       <h2>About Us</h2>
       <div className="grid gap-10 desktop:gap-5">
-        <div className="grid gap-10 desktop:grid-cols-3 desktop:mb-5">
+        <div className="grid gap-10 tablet:grid-cols-[1fr_300px] desktop:mb-5">
           <Image
             src="/images/placeholder.png"
             alt="Big Day Event team"
             width={800}
             height={800}
-            sizes="(max-width:600px) 100vw, (max-width:1280px) 50vw, 33vw"
-            className="object-cover tablet:hidden"
+            sizes="(max-width:800px) 100vw, 33vw"
+            className="object-cover tablet:order-last"
           />
-          <p className="desktop:col-span-2">
-            Big Day Event is the collaborative passion project of Cheryl
-            Dempster and Heidi Twiss. Together, they bring decades of experience
-            in event planning, floral design, and client coordination
-          </p>
-          <ButtonLink
-            color="green"
-            href="/contact"
-            cssClasses="hidden desktop:block"
-          >
-            Get In Touch
-          </ButtonLink>
+          <div className="space-y-10">
+            <div className="space-y-5">
+              <p className="desktop:col-span-2">
+                Big Day Event is the brainchild of Cheryl Dempster and Heidi
+                Twiss, two seasoned professionals with a combined wealth of
+                experience in event planning, floral design, and client
+                coordination. Cheryl's background lies in organising
+                high-profile weddings and events, where her meticulous attention
+                to detail and dedication to realising couples' dreams shine.
+                Heidi contributes 19 years of expertise as a florist and event
+                coordinator, honed in Johannesburg, South Africa. Her diverse
+                skillset encompasses floristry, event design, and client
+                liaison, guaranteeing seamless wedding execution.
+              </p>
+              <p>
+                Together, Cheryl and Heidi offer a unique blend of local Garden
+                Route knowledge and the capacity to orchestrate weddings
+                internationally. Their specialisation lies in creating
+                personalised, stress-free celebrations, allowing couples to
+                fully enjoy their special day.
+              </p>
+            </div>
+            <ButtonLink
+              color="green"
+              href="/contact"
+              cssClasses="tablet:place-self-start"
+            >
+              Get In Touch
+            </ButtonLink>
+          </div>
         </div>
-        <div className="grid gap-10 desktop:grid-cols-3">
+        {/* <div className="grid gap-10 desktop:grid-cols-3">
           <div className="grid gap-2.5">
             <h3>Cheryl&apos;s Expertise</h3>
             <p>
@@ -80,11 +98,11 @@ const AboutSection = () => {
             sizes="(max-width:800px) 100vw, (max-width:1280px) 50vw, 33vw"
             className="object-cover aspect-[4/3] hidden desktop:block"
           />
-        </div>
+        </div> */}
       </div>
-      <ButtonLink color="green" href="/contact" cssClasses="desktop:hidden">
+      {/* <ButtonLink color="green" href="/contact" cssClasses="desktop:hidden">
         Get In Touch
-      </ButtonLink>
+      </ButtonLink> */}
     </section>
   );
 };
