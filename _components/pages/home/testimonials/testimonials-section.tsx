@@ -23,10 +23,7 @@ const TestimonialsSection = ({ cssClasses }: TestimonialsProps) => {
           Testimonials
         </h2>
         <div className="overflow-hidden border-y-[1.5px] border-green py-5">
-          <TestimonialsSlider
-            data={testimonials}
-            cssClasses="h-[325px] phone:h-[225px] desktop:h-[335px]"
-          />
+          <TestimonialsSlider data={testimonials} />
         </div>
       </div>
       <ButtonLink href="/contact">Contact Us</ButtonLink>

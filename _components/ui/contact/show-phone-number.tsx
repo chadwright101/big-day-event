@@ -15,14 +15,14 @@ const ShowPhoneNumber = ({
   person,
 }: showContactProps) => {
   const [showPhone, setShowPhone] = useState("Show phone number");
-  const [showSpinnerEmail, setShowSpinnerEmail] = useState(false);
+  const [showSpinnerPhone, setShowSpinnerPhone] = useState(false);
 
   const handleShowPhoneNumbers = async (person: string) => {
-    setShowSpinnerEmail(true);
+    setShowSpinnerPhone(true);
     const phoneNumber =
       (await fetchPhoneNumber(person)) || "Phone number not found";
     setShowPhone(phoneNumber);
-    setShowSpinnerEmail(false);
+    setShowSpinnerPhone(false);
   };
 
   if (showPhone === "Show phone number") {
@@ -35,7 +35,7 @@ const ShowPhoneNumber = ({
         )}
         aria-label="Show phone number"
       >
-        {showSpinnerEmail ? <div className="spinner"></div> : showPhone}
+        {showSpinnerPhone ? <div className="spinner"></div> : showPhone}
       </button>
     );
   } else {

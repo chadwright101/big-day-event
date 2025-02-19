@@ -53,11 +53,11 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
       <button
         onClick={() => setIsOpen(true)}
         className={classNames("ease-in-out duration-300 -mr-3", {
-          "-translate-y-1": isScrolled,
+          "-translate-y-1.5": isScrolled,
         })}
         aria-label="Open menu"
       >
-        <Equal color="#2D2C33" strokeWidth={1.5} className="h-14 w-14 p-2" />
+        <Equal color="#2D2C33" strokeWidth={1.5} className="h-12 w-12 p-1" />
       </button>
 
       {/* Slide-out Menu */}
