@@ -141,10 +141,19 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
               className={classNames(
                 "flex flex-col justify-between h-full gap-5 tablet:grid grid-cols-[2fr_1fr] desktop:flex",
                 {
-                  "desktop:overflow-y-scroll desktop:pr-3": showScroll,
+                  "desktop:overflow-y-scroll desktop:pr-3 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:bg-grey [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-grey/25":
+                    showScroll,
                   "overflow-hidden": !showScroll,
                 }
               )}
+              style={
+                showScroll
+                  ? {
+                      scrollbarGutter: "stable",
+                      overflowY: "scroll",
+                    }
+                  : undefined
+              }
             >
               <div className="space-y-5">
                 <p style={{ whiteSpace: "pre-line" }}>

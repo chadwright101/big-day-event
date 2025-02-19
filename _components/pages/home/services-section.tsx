@@ -40,7 +40,7 @@ const ServicesSection = () => {
             </ButtonLink>
           </div>
           <Image
-            src="/images/favorites-24.jpg"
+            src="/images/general/favorites-24.jpg"
             alt="Big Day Event"
             width={800}
             height={800}

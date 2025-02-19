@@ -9,7 +9,7 @@ const AboutSection = () => {
         <div className="grid gap-10 tablet:grid-cols-[1fr_300px] desktop:mb-5">
           <div className="h-full tablet:order-last">
             <Image
-              src="/images/0008-JE.jpg"
+              src="/images/general/0008-JE.jpg"
               alt="Big Day Event team"
               width={800}
               height={800}
