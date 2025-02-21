@@ -38,7 +38,7 @@ const ServicesSection = () => {
             <ButtonLink href="/contact">Contact Us For Details</ButtonLink>
           </div>
           <Image
-            src="/images/general/1342y53u6.jpg"
+            src="/images/gallery/decor-and-details/1342y53u6.jpg"
             alt="Big Day Event"
             width={800}
             height={800}
