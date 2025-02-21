@@ -14,10 +14,15 @@ import "swiper/css/pagination";
 
 interface SliderProps {
   cssClasses?: string;
-  data: { client: string; testimonial: string[]; image: string }[];
+  data: {
+    client: string;
+    testimonial: string[];
+    image: string;
+    location?: string;
+    position?: string;
+  }[];
 }
 
-const CHAR_LIMIT = 350;
 const AUTOPLAY_DELAY = 10000;
 const SLIDE_CHANGE_DELAY = 1000;
 const SLIDE_SPEED = 1000;
@@ -29,17 +34,30 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
   const justExpanded = useRef(false);
   const router = useRouter();
   const [needsReadMoreArray, setNeedsReadMoreArray] = useState<boolean[]>([]);
+  const [charLimit, setCharLimit] = useState(350);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCharLimit(window.innerWidth >= 1280 ? 180 : 350);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const initialNeedsReadMore = data.map(({ testimonial }) => {
-      let charsLeft = CHAR_LIMIT;
+      let charsLeft = charLimit;
       return testimonial.some((text) => {
         charsLeft -= text.length + 2;
         return charsLeft < 0;
       });
     });
     setNeedsReadMoreArray(initialNeedsReadMore);
-  }, [data]);
+  }, [data, charLimit]);
 
   const handleSlideChange = useCallback(() => {
     if (!swiperRef.current) return;
@@ -75,27 +93,30 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
     []
   );
 
-  const getDisplayedText = useCallback((testimonial: string[]) => {
-    let displayedText = "";
-    let charsLeft = CHAR_LIMIT;
+  const getDisplayedText = useCallback(
+    (testimonial: string[]) => {
+      let displayedText = "";
+      let charsLeft = charLimit;
 
-    for (let i = 0; i < testimonial.length; i++) {
-      if (testimonial[i].length + 2 <= charsLeft) {
-        displayedText += testimonial[i];
-        charsLeft -= testimonial[i].length;
-        if (i < testimonial.length - 1) {
-          displayedText += "\n\n";
-          charsLeft -= 2;
+      for (let i = 0; i < testimonial.length; i++) {
+        if (testimonial[i].length + 2 <= charsLeft) {
+          displayedText += testimonial[i];
+          charsLeft -= testimonial[i].length;
+          if (i < testimonial.length - 1) {
+            displayedText += "\n\n";
+            charsLeft -= 2;
+          }
+        } else {
+          if (charsLeft > 0 && i < testimonial.length) {
+            displayedText += testimonial[i].substring(0, charsLeft);
+          }
+          break;
         }
-      } else {
-        if (charsLeft > 0 && i < testimonial.length) {
-          displayedText += testimonial[i].substring(0, charsLeft);
-        }
-        break;
       }
-    }
-    return displayedText;
-  }, []);
+      return displayedText;
+    },
+    [charLimit]
+  );
 
   const handleReadMore = useCallback(() => {
     setShowMore(true);
@@ -117,7 +138,7 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
       }}
       spaceBetween={40}
       className={classNames(
-        "desktop:h-[335px]",
+        "desktop:h-[392px]",
         {
           "h-[520px] min-[380px]:h-[550px] phone:h-[550px] tablet:h-auto":
             !showMore,
@@ -132,7 +153,7 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
       loop
       style={swiperStyle}
     >
-      {data.map(({ client, testimonial, image }, index) => {
+      {data.map(({ client, testimonial, image, location, position }, index) => {
         const displayedText = getDisplayedText(testimonial);
 
         return (
@@ -177,7 +198,7 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
                   alt={`${client} testimonial - Big Day Event`}
                   width={600}
                   height={400}
-                  className="object-cover aspect-[4/2.5] desktop:hidden"
+                  className={`object-cover object-${position} aspect-[4/2.5]`}
                 />
               </div>
             </div>

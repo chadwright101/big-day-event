@@ -14,7 +14,7 @@ const TestimonialsSection = ({ cssClasses }: TestimonialsProps) => {
   return (
     <article
       className={classNames(
-        "max-w-[1280px] mx-auto px-7 pb-15 space-y-10 tablet:px-10 desktop:px-0",
+        "max-w-[1280px] mx-auto px-7 pb-15 space-y-10 tablet:px-10 desktop:px-0 desktop:pb-0",
         cssClasses
       )}
     >

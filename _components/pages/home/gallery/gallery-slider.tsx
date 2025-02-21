@@ -20,10 +20,13 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
   if (desktop) {
     return (
       <Swiper
-        autoplay={{ delay: 5000, disableOnInteraction: true }}
-        speed={1000}
-        effect="fade"
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: true,
+        }}
+        spaceBetween={12}
+        speed={1500}
+        modules={[Autoplay, Navigation, Pagination]}
         pagination={{
           dynamicBullets: true,
         }}
@@ -35,20 +38,21 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
         loop
         style={
           {
-            "--swiper-pagination-color": "#FFFFFF",
-            "--swiper-pagination-bullet-inactive-color": "#FFFFFF",
+            "--swiper-pagination-color": "#96AB8F",
+            "--swiper-pagination-bullet-inactive-color": "#96AB8F",
             "--swiper-pagination-bullet-inactive-opacity": "0.8",
             "--swiper-pagination-bullet-size": "10px",
           } as React.CSSProperties
         }
       >
         {data.map((slide, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="pb-10">
             <Image
               src={slide}
               alt={`Big Day Event - Image ${index + 1}`}
-              className="rounded-none w-full h-full object-cover"
-              fill
+              className="w-full h-full object-contain"
+              width={800}
+              height={600}
             />
           </SwiperSlide>
         ))}
@@ -107,19 +111,20 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
         loop
         style={
           {
-            "--swiper-pagination-color": "#FFFFFF",
-            "--swiper-pagination-bullet-inactive-color": "#FFFFFF",
+            "--swiper-pagination-color": "#96AB8F",
+            "--swiper-pagination-bullet-inactive-color": "#96AB8F",
             "--swiper-pagination-bullet-inactive-opacity": "0.8",
           } as React.CSSProperties
         }
       >
         {data.map((slide, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="pb-10">
             <Image
               src={slide}
               alt={`Big Day Event - Image ${index + 1}`}
-              className="rounded-none w-full h-full object-cover"
-              fill
+              className="w-full h-full object-contain"
+              width={800}
+              height={600}
             />
           </SwiperSlide>
         ))}

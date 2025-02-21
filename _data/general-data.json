@@ -63,23 +63,28 @@
   },
   "testimonials": [
     {
-      "client": "Deshika and Marcus, Emily Moon",
+      "client": "Deshika and Marcus, Germany",
+      "location": "Emily Moon",
+      "position": "top",
       "testimonial": [
-        "Hi Cheryl! Just wanted to say thank you for all your assistance for the day! It really was such an amazing wedding and we couldn’t of done it without your help! Wishing you all the best for the festive season."
+        "Just wanted to say thank you for all your assistance for the day! It really was such an amazing wedding and we couldn’t of done it without your help!"
       ],
       "image": "/images/testimonials/Deshika-and-Marcus.jpeg"
     },
     {
-      "client": "Ses and Theo",
+      "client": "Ses and Theo - Cayman Islands ",
+      "location": "Tsistikamma",
+      "position": "center",
       "testimonial": [
-        "Hi Cheryl! Firstly, I just wanted to say I have really missed talking to you since the wedding. You were such a big part of our lives this year and now I feel like there is something missing since we are no longer chatting everyday.",
-        "Secondly and most importantly, I wanted to say the biggest thank you for playing such a huge role in creating our special day for us. It was one of the most magical misty days of our lives. We loved every second of it and couldn’t have asked for a more special celebration of our love and marriage! You guided and supported us with all the decisions and chose the most incredible service providers for us. Throughout the planning process and on the day, you were calm and efficient. Ensuring that everything ran smoothly and that my parents, Theo and I could just relax and enjoy the weekend. You were such a lovely presence and just went above and beyond to make sure we were happy.",
-        "Thank you, thank you, thank you!! You were truly amazing."
+        "Firstly,I just wanted to say I have really missed talking to you since the wedding. You were such a big part of our lives this year and now I feel like there is something missing since we are no longer chatting everyday",
+        "Secondly and most importantly, I wanted to say the biggest thank you for playing such a huge role in creating our special day for us. It was one of the most magical misty days of our lives. We loved every second of it and couldn’t have asked for a more special celebration of our love and marriage! You guided and supported us with all the decisions and chose the most incredible service providers for us. Throughout the planning process and on the day, you were calm and efficient. Ensuring that everything ran smoothly and that my parents, Theo and I could just relax and enjoy the weekend. You were such a lovely presence and just went above and beyond to make sure we were happy 🤍 Thank you, thank you, thank you!! You were truly amazing 🤍"
       ],
       "image": "/images/testimonials/Ses-and-Theo.jpeg"
     },
     {
-      "client": "Caroline and Luke",
+      "client": "Caroline and Luke - Dubai",
+      "location": "Emily Moon ",
+      "position": "top",
       "testimonial": [
         "I just wanted to say a very, very big thank you for everything you did for Luke and I this time last year. We honestly could not have envisioned a more perfect day for our wedding, and it was all thanks to you. We thought about you a lot yesterday and all our other wonderful vendors too. Miss our chats and planning!"
       ],

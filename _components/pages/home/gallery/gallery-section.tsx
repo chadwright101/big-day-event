@@ -84,14 +84,14 @@ const GallerySection = () => {
                 <div className="hidden desktop:block">
                   <GallerySlider
                     data={decor}
-                    cssClasses=" h-[550px] w-full"
+                    cssClasses="h-[590px] w-full"
                     desktop
                   />
                 </div>
                 <div className="desktop:hidden">
                   <GallerySlider
                     data={decor}
-                    cssClasses="w-full h-[280px] min-[380px]:h-[320px] phone:h-[380px] min-[550px]:h-[450px] tablet:h-[600px]"
+                    cssClasses="w-full h-[320px] min-[380px]:h-[360px] phone:h-[420px] min-[550px]:h-[490px] tablet:h-[640px]"
                   />
                 </div>
               </>
@@ -101,14 +101,14 @@ const GallerySection = () => {
                 <div className="hidden desktop:block">
                   <GallerySlider
                     data={destination}
-                    cssClasses="w-full h-[550px]"
+                    cssClasses="h-[590px] w-full"
                     desktop
                   />
                 </div>
                 <div className="desktop:hidden">
                   <GallerySlider
                     data={destination}
-                    cssClasses="w-full h-[280px] min-[380px]:h-[320px] phone:h-[380px] min-[550px]:h-[450px] tablet:h-[600px]"
+                    cssClasses="w-full h-[320px] min-[380px]:h-[360px] phone:h-[420px] min-[550px]:h-[490px] tablet:h-[640px]"
                   />
                 </div>
               </>
@@ -118,21 +118,21 @@ const GallerySection = () => {
                 <div className="hidden desktop:block">
                   <GallerySlider
                     data={gardenRoute}
-                    cssClasses="w-full h-[550px]"
+                    cssClasses="h-[590px] w-full"
                     desktop
                   />
                 </div>
                 <div className="desktop:hidden">
                   <GallerySlider
                     data={gardenRoute}
-                    cssClasses="w-full h-[280px] min-[380px]:h-[320px] phone:h-[380px] min-[550px]:h-[450px] tablet:h-[600px]"
+                    cssClasses="w-full h-[320px] min-[380px]:h-[360px] phone:h-[420px] min-[550px]:h-[490px] tablet:h-[640px]"
                   />
                 </div>
               </div>
             )}
           </div>
           <div className="overflow-hidden">
-            <TestimonialsSection cssClasses="hidden desktop:flex flex-col h-full justify-between desktop:py-0" />
+            <TestimonialsSection cssClasses="hidden desktop:flex flex-col h-full gap-0 desktop:py-0" />
           </div>
         </div>
       </div>
