@@ -39,11 +39,7 @@ const AboutSection = () => {
                 fully enjoy their special day.
               </p>
             </div>
-            <ButtonLink
-              color="green"
-              href="/contact"
-              cssClasses="tablet:place-self-start"
-            >
+            <ButtonLink href="/contact" cssClasses="tablet:place-self-start">
               Get In Touch
             </ButtonLink>
           </div>
@@ -102,7 +98,7 @@ const AboutSection = () => {
           />
         </div> */}
       </div>
-      {/* <ButtonLink color="green" href="/contact" cssClasses="desktop:hidden">
+      {/* <ButtonLink href="/contact" cssClasses="desktop:hidden">
         Get In Touch
       </ButtonLink> */}
     </section>

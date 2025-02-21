@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
           <div className="w-full h-full">
             <Image
-              src="/images/general/0119-JE.jpg"
+              src="/images/general/3917508713.jpg"
               alt="Big Day Event"
               width={800}
               height={800}

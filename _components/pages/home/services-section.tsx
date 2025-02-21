@@ -35,12 +35,10 @@ const ServicesSection = () => {
           <div className="grid gap-5">
             <h4>Unsure which package is right for you?</h4>
             <p>Let’s discuss your vision and create a personalised plan.</p>
-            <ButtonLink color="green" href="/contact">
-              Contact Us For Details
-            </ButtonLink>
+            <ButtonLink href="/contact">Contact Us For Details</ButtonLink>
           </div>
           <Image
-            src="/images/general/favorites-24.jpg"
+            src="/images/general/1342y53u6.jpg"
             alt="Big Day Event"
             width={800}
             height={800}

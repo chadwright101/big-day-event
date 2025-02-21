@@ -12,7 +12,7 @@ export const buttonStyles = (
     {
       "bg-salmon border-salmon text-white": color === "salmon",
       "desktop:hover:bg-transparent desktop:hover:text-black":
-        (color === "salmon" || color === "green") && !disabled && !pending,
+        color !== "white" && !disabled && !pending,
       "bg-green border-green text-white": color === "green",
       "bg-white border-salmon": color === "white",
       "desktop:hover:bg-salmon desktop:hover:text-white":
