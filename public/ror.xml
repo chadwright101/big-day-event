@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://www.bigdayevent.co.za/</title>
+  <link>https://www.bigdayevent.co.za/</link>
+
+<item>
+     <link>https://www.bigdayevent.co.za/</link>
+     <title>Big Day Event</title>
+     <description>Big Day Event - Crafting weddings of your dreams by bringing decades of experience in event planning, floral design, and client coordination</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.bigdayevent.co.za/contact</link>
+     <title>Contact - Big Day Event</title>
+     <description>Big Day Event - Crafting weddings of your dreams by bringing decades of experience in event planning, floral design, and client coordination</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
