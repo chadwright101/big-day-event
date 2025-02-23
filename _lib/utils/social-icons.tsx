@@ -16,7 +16,7 @@ const SocialIcons = ({ cssClasses, small }: Props) => {
       <ul className={`flex gap-2 ${cssClasses}`}>
         <li>
           <Link
-            href=""
+            href="https://www.facebook.com/bigdayeventSA"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="View our Facebook page"
@@ -31,7 +31,7 @@ const SocialIcons = ({ cssClasses, small }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://www.instagram.com/big_day_event_sa"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="View our Instagram profile"
@@ -46,7 +46,7 @@ const SocialIcons = ({ cssClasses, small }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://wa.me/message/3ROA7X36CJ4IJ1"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="Get in touch on WhatsApp"
@@ -66,7 +66,7 @@ const SocialIcons = ({ cssClasses, small }: Props) => {
       <ul className={`flex gap-6 ${cssClasses}`}>
         <li>
           <Link
-            href=""
+            href="https://www.facebook.com/bigdayeventSA"
             className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200 p-2 -m-2"
             target="_blank"
             aria-label="View our Facebook page"
@@ -81,7 +81,7 @@ const SocialIcons = ({ cssClasses, small }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://www.instagram.com/big_day_event_sa"
             className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200 p-2 -m-2"
             target="_blank"
             aria-label="View our Instagram profile"
@@ -96,7 +96,7 @@ const SocialIcons = ({ cssClasses, small }: Props) => {
         </li>
         <li>
           <Link
-            href="https://wa.me/message/WCHULFMQ26MMK1"
+            href="https://wa.me/message/3ROA7X36CJ4IJ1"
             className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200 p-2 -m-2"
             target="_blank"
             aria-label="Get in touch on WhatsApp"

@@ -171,7 +171,6 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
                 showScroll
                   ? {
                       scrollbarGutter: "stable",
-                      overflowY: "scroll",
                     }
                   : undefined
               }
