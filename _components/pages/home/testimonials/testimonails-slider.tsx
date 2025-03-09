@@ -205,7 +205,7 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
         );
       })}
       <button
-        className="hidden desktop:grid next-button absolute -bottom-[7px] z-10 left-5 cursor-pointer place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:opacity-70 ease-in-out duration-300"
+        className="hidden desktop:grid previous-button absolute -bottom-[7px] z-10 left-5 cursor-pointer place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:opacity-70 ease-in-out duration-300"
         aria-label="Show previous image"
       >
         <svg
@@ -222,7 +222,7 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
         </svg>
       </button>
       <button
-        className="hidden desktop:grid previous-button absolute -bottom-[7px] z-10 right-5 cursor-pointer place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:opacity-70 ease-in-out duration-300"
+        className="hidden desktop:grid next-button absolute -bottom-[7px] z-10 right-5 cursor-pointer place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:opacity-70 ease-in-out duration-300"
         aria-label="Show next image"
       >
         <svg

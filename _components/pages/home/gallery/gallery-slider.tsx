@@ -57,7 +57,7 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
           </SwiperSlide>
         ))}
         <button
-          className="next-button absolute top-[49%] z-10 left-[60px] cursor-pointer grid place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:bg-white ease-in-out duration-300"
+          className="previous-button absolute top-[49%] z-10 left-[60px] cursor-pointer grid place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:bg-white ease-in-out duration-300"
           aria-label="Show previous image"
         >
           <svg
@@ -75,7 +75,7 @@ const GallerySlider = ({ cssClasses, data, desktop }: SliderProps) => {
           </svg>
         </button>
         <button
-          className="previous-button absolute top-[49%] z-10 right-[60px] cursor-pointer grid place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:bg-white ease-in-out duration-300"
+          className="next-button absolute top-[49%] z-10 right-[60px] cursor-pointer grid place-items-center rounded-[12px] bg-white/[90%] w-10 h-10 hover:bg-white ease-in-out duration-300"
           aria-label="Show next image"
         >
           <svg
