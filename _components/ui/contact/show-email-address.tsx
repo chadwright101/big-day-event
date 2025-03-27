@@ -10,20 +10,15 @@ import { fetchEmailAddress } from "@/_actions/contact-actions";
 export interface showContactProps {
   buttonClasses?: string;
   linkClasses?: string;
-  person: string;
 }
 
-const ShowEmailAddress = ({
-  buttonClasses,
-  linkClasses,
-  person,
-}: showContactProps) => {
+const ShowEmailAddress = ({ buttonClasses, linkClasses }: showContactProps) => {
   const [showEmail, setShowEmail] = useState("Show email address");
   const [showSpinnerEmail, setShowSpinnerEmail] = useState(false);
 
-  const handleShowEmailAddress = async (person: string) => {
+  const handleShowEmailAddress = async () => {
     setShowSpinnerEmail(true);
-    const emailAddress = (await fetchEmailAddress(person)) || "Email not found";
+    const emailAddress = (await fetchEmailAddress()) || "Email not found";
     setShowEmail(emailAddress);
     setShowSpinnerEmail(false);
   };
@@ -31,9 +26,9 @@ const ShowEmailAddress = ({
   if (showEmail === "Show email address") {
     return (
       <button
-        onClick={() => handleShowEmailAddress(person)}
+        onClick={() => handleShowEmailAddress()}
         className={classNames(
-          "px-2 text-left -mx-2 py-3 -my-3 text-paragraph text-left hover:desktop:opacity-80 hover:cursor-pointer desktop:p-0 desktop:m-0 italic",
+          "px-2 text-left -mx-2 py-3 -my-3 text-paragraph hover:desktop:opacity-80 hover:cursor-pointer desktop:p-0 desktop:m-0 italic",
           buttonClasses
         )}
         aria-label="Show email address"

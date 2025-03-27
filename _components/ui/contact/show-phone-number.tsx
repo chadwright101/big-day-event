@@ -9,18 +9,13 @@ import { fetchPhoneNumber } from "@/_actions/contact-actions";
 
 import { showContactProps } from "./show-email-address";
 
-const ShowPhoneNumber = ({
-  buttonClasses,
-  linkClasses,
-  person,
-}: showContactProps) => {
+const ShowPhoneNumber = ({ buttonClasses, linkClasses }: showContactProps) => {
   const [showPhone, setShowPhone] = useState("Show phone number");
   const [showSpinnerPhone, setShowSpinnerPhone] = useState(false);
 
-  const handleShowPhoneNumbers = async (person: string) => {
+  const handleShowPhoneNumbers = async () => {
     setShowSpinnerPhone(true);
-    const phoneNumber =
-      (await fetchPhoneNumber(person)) || "Phone number not found";
+    const phoneNumber = (await fetchPhoneNumber()) || "Phone number not found";
     setShowPhone(phoneNumber);
     setShowSpinnerPhone(false);
   };
@@ -28,7 +23,7 @@ const ShowPhoneNumber = ({
   if (showPhone === "Show phone number") {
     return (
       <button
-        onClick={() => handleShowPhoneNumbers(person)}
+        onClick={() => handleShowPhoneNumbers()}
         className={classNames(
           "px-2 text-left -mx-2 text-paragraph py-3 -my-3 hover:tablet:opacity-80 hover:cursor-pointer tablet:p-0 tablet:m-0 italic",
           buttonClasses

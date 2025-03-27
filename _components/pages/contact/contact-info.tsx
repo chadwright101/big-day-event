@@ -8,15 +8,8 @@ const ContactInfo = () => {
       <div className="space-y-4 desktop:space-y-3">
         <h3>Cheryl</h3>
         <div className="grid gap-4 place-content-start desktop:gap-3">
-          <ShowPhoneNumber person="cheryl" />
-          <ShowEmailAddress person="cheryl" />
-        </div>
-      </div>
-      <div className="space-y-4 desktop:space-y-3">
-        <h3>Heidi</h3>
-        <div className="grid gap-4 place-content-start desktop:gap-3">
-          <ShowPhoneNumber person="heidi" />
-          <ShowEmailAddress person="heidi" />
+          <ShowPhoneNumber />
+          <ShowEmailAddress />
         </div>
       </div>
       <SocialIcons cssClasses="desktop:hidden" />
