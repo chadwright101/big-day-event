@@ -1,6 +1,5 @@
-# Firebase secret setting
-# Step 1: go to Google Cloud Console's Secret Manager for this project, and then add the secrets manually. Each secret MUST have the location manually set as europe-west4
-# Step 2: run the following command to grant access to each the secret on GCC - firebase apphosting:secrets:grantaccess [variable name] --backend [project-ID]
+# use Node 20
+# firebase apphosting:secrets:set SMTP_HOST --location europe-west4
 
 runConfig:
   minInstances: 0

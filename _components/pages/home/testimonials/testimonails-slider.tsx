@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import classNames from "classnames";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper/types";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -130,9 +130,7 @@ const TestimonialsSlider = ({ cssClasses, data }: SliderProps) => {
         swiperRef.current = swiper;
       }}
       onSlideChange={handleSlideChange}
-      autoplay={{ delay: AUTOPLAY_DELAY, disableOnInteraction: true }}
-      speed={SLIDE_SPEED}
-      modules={[Autoplay, Navigation, Pagination]}
+      modules={[Navigation, Pagination]}
       pagination={{
         dynamicBullets: true,
       }}
